@@ -1,3 +1,8 @@
+import { useContext } from "react";
+
+
+
+// context provider
 export type Accuracy =
     | "right" //Right letter and right position
     | "wrong" //Wrong letter
