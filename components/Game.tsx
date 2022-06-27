@@ -1,4 +1,4 @@
-import { useContext } from "react";
+import { useContext, useState } from "react";
 
 
 
@@ -12,6 +12,10 @@ export type Accuracy =
 const getRandomCommonWord = () =>
     commonWordsArray[Math.floor(Math.random () * commonWordsArray.length)];
 
+
+// make global components    
 export const Game = () => {
     const { solutionWord, setSolutionWord} = useContext(SolutionWordContext)
+    const [gueses, setGuesses] = useState<string[]>("");
+    
 }
