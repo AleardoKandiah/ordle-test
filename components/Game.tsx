@@ -17,5 +17,19 @@ const getRandomCommonWord = () =>
 export const Game = () => {
     const { solutionWord, setSolutionWord} = useContext(SolutionWordContext)
     const [gueses, setGuesses] = useState<string[]>("");
-    
+
 }
+
+const addLetter = useCallback(
+    // public claaback (name:type) => returntype;
+    (letter: string) => {
+        if (currentGuess.lenght < 5) {
+            setCurrentGuess(currentGuess + letter);
+        }
+    },
+    [currentGuess]
+);
+
+const onSubmit = useCallBack(() => {
+
+})
