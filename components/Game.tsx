@@ -34,6 +34,11 @@ const onSubmit = useCallBack(() => {
     if(currentGuess.length === 5) {
         if(allWordsSet.has(currentGuess)) {
             const accuracies = evaluate(currentGuess, solutionWord);
+
+            // Check for win/loss
+            if (accuracies.every((accuracy) => accuracy === "right")) {
+                setGameState("win");
+            }
         }
     }
 })
