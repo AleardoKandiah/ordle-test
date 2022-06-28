@@ -4,7 +4,7 @@ import { useContext, useState } from "react";
 
 // context provider
 export type Accuracy =
-    | "right" //Right letter and right position
+    | "right" //Right lette, right position
     | "wrong" //Wrong letter
     | "almost" //Right letter and wrong position
     | "unknown" //Not evaluated
