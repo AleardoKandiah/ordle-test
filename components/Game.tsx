@@ -38,6 +38,8 @@ const onSubmit = useCallBack(() => {
             // Check for win/loss
             if (accuracies.every((accuracy) => accuracy === "right")) {
                 setGameState("win");
+            } else if (guesses.length === 5) {
+                setGameState("lose");
             }
         }
     }
