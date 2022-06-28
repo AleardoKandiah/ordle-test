@@ -43,6 +43,17 @@ const onSubmit = useCallBack(() => {
             }
 
             // Figure out which keyboard keys need update their colors
+            let newGuessedLetters = [...guessedLetters];
+            for (let i = 0; i < currentGuess.length; i++) {
+                const isKeyRight = accuracies[i] === "right";
+                const isKeyAlmost = 
+                accuracies[i] === "almost" &&
+                // not previously guessed right
+                !newGuessedLetters.some(
+                    (letter) =>
+                        letter.value === currentGuess[i] && letter.accuracy === "right"
+                );
+            }
         }
     }
 })
