@@ -41,6 +41,8 @@ const onSubmit = useCallBack(() => {
             } else if (guesses.length === 5) {
                 setGameState("lose");
             }
+
+            // Figure out which keyboard keys need update their colors
         }
     }
 })
