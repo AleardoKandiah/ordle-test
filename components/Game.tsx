@@ -6,7 +6,7 @@ import { useContext, useState } from "react";
 export type Accuracy =
     | "right" //Right letter, right position
     | "wrong" //Wrong letter
-    | "almost" //Right letter and wrong position
+    | "almost" //Right lette, wrong position
     | "unknown" //Not evaluated
 
 const getRandomCommonWord = () =>
