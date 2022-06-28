@@ -31,5 +31,9 @@ const addLetter = useCallback(
 );
 
 const onSubmit = useCallBack(() => {
-
+    if(currentGuess.length === 5) {
+        if(allWordsSet.has(currentGuess)) {
+            const accuracies
+        }
+    }
 })
