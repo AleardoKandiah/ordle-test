@@ -48,7 +48,7 @@ const onSubmit = useCallBack(() => {
                 const isKeyRight = accuracies[i] === "right";
                 const isKeyAlmost = 
                 accuracies[i] === "almost" &&
-                // not previously guessed right
+                // Not previously guessed right
                 !newGuessedLetters.some(
                     (letter) =>
                         letter.value === currentGuess[i] && letter.accuracy === "right"
