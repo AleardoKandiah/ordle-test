@@ -57,6 +57,8 @@ const onSubmit = useCallBack(() => {
                 accuracies[i] === "wrong" &&
                 // Not previously guessed
                 !guessedLetters.some((letter) => letter.value === currentGuess[i]);
+
+                if (isKeyRight)
             }
         }
     }
