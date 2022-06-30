@@ -60,6 +60,9 @@ const onSubmit = useCallBack(() => {
 
                 if (isKeyRight || isKeyAlmost) {
                     // remove the existing letter if it exists
+                    newGuessedLetters = newGuessedLetters.filter(
+                        (letter) => letter.value !== currentGuess[i]
+                    );
                 }
             }
         }
