@@ -63,6 +63,11 @@ const onSubmit = useCallBack(() => {
                     newGuessedLetters = newGuessedLetters.filter(
                         (letter) => letter.value !== currentGuess[i]
                     );
+
+                    newGuessedLetters.push({
+                        value: currentGuess[i],
+                        accuracy: isKeyRight ? "right" : "almost",
+                    });
                 }
             }
         }
