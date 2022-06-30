@@ -58,7 +58,9 @@ const onSubmit = useCallBack(() => {
                 // Not previously guessed
                 !guessedLetters.some((letter) => letter.value === currentGuess[i]);
 
-                if (isKeyRight)
+                if (isKeyRight || isKeyAlmost) {
+                    // remove the existing letter if it exists
+                }
             }
         }
     }
