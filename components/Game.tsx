@@ -86,4 +86,4 @@ const onSubmit = useCallBack(() => {
             alert("Not a word!")
         }
     }
-})
+}, [currentGuess, guessedLetters, guesses, solutionWord]);
