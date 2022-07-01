@@ -68,7 +68,12 @@ const onSubmit = useCallBack(() => {
                         value: currentGuess[i],
                         accuracy: isKeyRight ? "right" : "almost",
                     });
-                } else if
+                } else if(isKeyWrong) {
+                    newGuessedLetters.push({
+                        value: currentGuess[i],
+                        accuracy: "wrong",
+                    })
+                }
             }
         }
     }
