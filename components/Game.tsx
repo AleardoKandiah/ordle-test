@@ -1,3 +1,4 @@
+import { setgid } from "process";
 import { useContext, useState } from "react";
 
 
@@ -76,6 +77,13 @@ const onSubmit = useCallBack(() => {
                 }
             }
             // Update key colors
+            setGuessLetters(newGuessedLetters);
+
+            // record and reset guess
+            setGuesses([...newGuessedLetters, currentGuess]);
+            setCurrentGuess("");
+        }   else {
+            alert("Not a word!")
         }
     }
 })
