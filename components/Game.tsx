@@ -72,7 +72,7 @@ const onSubmit = useCallBack(() => {
                     newGuessedLetters.push({
                         value: currentGuess[i],
                         accuracy: "wrong",
-                    })
+                    });
                 }
             }
         }
