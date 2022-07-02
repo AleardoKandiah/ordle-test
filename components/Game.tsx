@@ -1,5 +1,5 @@
 import { setgid } from "process";
-import { useCallback, useContext, useState } from "react";
+import { useCallback, useContext, useEffect, useState } from "react";
 
 
 
@@ -94,3 +94,11 @@ const onBackspace = useCallback(() => {
         setCurrentGuess(currentGuess.slice(0,-1));
     }
 }, [currentGuess]);
+
+useEffect(() => {
+    const onKeyDown = (event: KeyboardEvent) => {
+        const {key, metaKey, shiftKey, ctrlkey, altKey, isComposing} = events;
+
+        
+    }
+})
