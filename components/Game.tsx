@@ -99,6 +99,9 @@ useEffect(() => {
     const onKeyDown = (event: KeyboardEvent) => {
         const {key, metaKey, shiftKey, ctrlkey, altKey, isComposing} = events;
 
-        
+        // ignore the key combination and inputs
+        if( metaKey || shiftKey || ctrlkey || altKey || isComposing) {
+            return;
+        }
     }
 })
