@@ -1,5 +1,5 @@
 import { setgid } from "process";
-import { useContext, useState } from "react";
+import { useCallback, useContext, useState } from "react";
 
 
 
@@ -87,3 +87,10 @@ const onSubmit = useCallBack(() => {
         }
     }
 }, [currentGuess, guessedLetters, guesses, solutionWord]);
+
+add delete letter on backspa
+const onBackspace = useCallback(() => {
+    if (currentGuess.length > 0) {
+        setCurrentGuess(currentGuess.slice(0,-1));
+    }
+})
