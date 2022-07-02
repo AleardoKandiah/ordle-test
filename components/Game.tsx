@@ -93,4 +93,4 @@ const onBackspace = useCallback(() => {
     if (currentGuess.length > 0) {
         setCurrentGuess(currentGuess.slice(0,-1));
     }
-})
+}, [currentGuess]);
