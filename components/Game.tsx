@@ -88,7 +88,7 @@ const onSubmit = useCallBack(() => {
     }
 }, [currentGuess, guessedLetters, guesses, solutionWord]);
 
-add delete letter on backspac
+add delete letter on backspace
 const onBackspace = useCallback(() => {
     if (currentGuess.length > 0) {
         setCurrentGuess(currentGuess.slice(0,-1));
