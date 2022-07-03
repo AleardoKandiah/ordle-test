@@ -103,5 +103,13 @@ useEffect(() => {
         if( metaKey || shiftKey || ctrlkey || altKey || isComposing) {
             return;
         }
+
+        if (key.length === 1 && key.match(/[a-z]/i)) {
+            addLetter(key);
+        } else if (key === "Enter") {
+            onSubmit();
+        } else if (key === "Backspace") {
+            onBackspace();
+        }
     }
 })
