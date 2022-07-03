@@ -129,6 +129,15 @@ export const Game = () => {
                     <div className="">
                         <div className="">
                          <p>{gameState === "win" ? "You won! 🎓" : "You lost...❌" }</p>
+                         {gameState === "lose" && (
+                            <p>
+                                the word was{" "}
+                                <span className="uppercase font-bold text-stone-700 text-base">
+                                   {solutionWord}
+                                </span>
+                                .
+                            </p>
+                         )}
                 )}
             </div>
         </div>
