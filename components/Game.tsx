@@ -116,4 +116,14 @@ export const Game = () => {
         document.addEventListener("keydown", onKeyDown);
         return () => document.removeEventListener("keydown", onKeyDown);
     }, [addLetter, onBackspace, onSubmit]);
+
+    return (
+        <div>
+            <div>
+                {guesses.map((guess, i) => (
+                    <WordRow guessWord={guess} key={i} />
+                ))}
+            </div>
+        </div>
+    )
 }
