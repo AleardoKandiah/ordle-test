@@ -123,6 +123,13 @@ export const Game = () => {
                 {guesses.map((guess, i) => (
                     <WordRow guessWord={guess} key={i} />
                 ))}
+                {gameState === "playing" ? (
+                    <WordRow guessWord={currentGuess} isInput />
+                ) : (
+                    <div className="">
+                        <div className="">
+                         <p>{gameState === "win" ? "You won! 🎓" : "You lost...❌" }</p>
+                )}
             </div>
         </div>
     )
