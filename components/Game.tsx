@@ -110,6 +110,7 @@ export const Game = () => {
     }
   }, [currentGuess, guessedLetters, guesses, solutionWord]);
 
+    // add delete letter on backspace
   const onBackspace = useCallback(() => {
     if (currentGuess.length > 0) {
       setCurrentGuess(currentGuess.slice(0, -1));
@@ -149,7 +150,7 @@ export const Game = () => {
         ) : (
           <div className="flex mt-2 justify-between">
             <div className="font-medium">
-              <p>{gameState === "win" ? "You won! 👏" : "You lost... 😔"}</p>
+              <p>{gameState === "win" ? "You won! 🎓" : "You lost... 😞"}</p>
               {gameState === "lose" && (
                 <p>
                   The word was{" "}
