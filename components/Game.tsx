@@ -162,7 +162,7 @@ export const Game = () => {
               )}
               </div>
               <div>
-                button for reset game
+                button for reset game and selection of new word
                 <button
                 className="bg-stone-700 text-white px-4 py-1 rounded font-medium inline-block hover:bg-stone-500"
                 onClick={() => {
