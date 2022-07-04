@@ -160,3 +160,18 @@ export const Game = () => {
                   .
                 </p>
               )}
+              </div>
+              <div>
+                <button
+                className="bg-stone-700 text-white px-4 py-1 rounded font-medium inline-block hover:bg-stone-500"
+                onClick={() => {
+                    setSolutionWord(getRandomCommonWord());
+                    setGuesses([]);
+                    setGuessedLetters([]);
+                    setCurrentGuess("");
+                    setGameState("playing");
+                }}
+                >
+                    {gameState === "win" ? "Go again!": "Try again?"}
+                </button>
+              </div>
