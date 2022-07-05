@@ -184,5 +184,6 @@ export const Game = () => {
             <Instructions/>
             {/* thematic change tag */}
             <hr />
+            <Credits />
           </div>
         )}
