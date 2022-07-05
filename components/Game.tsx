@@ -182,6 +182,7 @@ export const Game = () => {
         {guesses.length === 0 && (
           <div className="flex flex-col gap-3 w-[calc(320px+1rem)] mt-8 mx-auto">
             <Instructions/>
+            {/* thematic change tag */}
             <hr />
           </div>
         )}
