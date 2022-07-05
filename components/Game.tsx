@@ -58,7 +58,7 @@ export const Game = () => {
       if (allWordsSet.has(currentGuess)) {
         const accuracies = evaluate(currentGuess, solutionWord);
 
-        // Check win/loss status.
+        // Check for win loss status.
         if (accuracies.every((accuracy) => accuracy === "right")) {
           setGameState("win");
         } else if (guesses.length === 5) {
