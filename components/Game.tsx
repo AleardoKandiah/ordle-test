@@ -179,4 +179,6 @@ export const Game = () => {
             </div>
           )}
         </div>
-        
+        {guesses.length === 0 && (
+          <div className="flex flex-col gap-3"
+        )}
