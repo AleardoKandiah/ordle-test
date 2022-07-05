@@ -187,3 +187,12 @@ export const Game = () => {
             <Credits />
           </div>
         )}
+        <Keyboard 
+          onKey={addLetter}
+          onSubmit={onSubmit}
+          onBackspace={onBackspace}
+          guessedLetters={guessedLetters}
+          />
+      </div>
+    );
+};  
