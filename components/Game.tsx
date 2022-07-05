@@ -176,3 +176,7 @@ export const Game = () => {
                     {gameState === "win" ? "Go again!": "Try again?"}
                 </button>
               </div>
+            </div>
+          )}
+        </div>
+        
