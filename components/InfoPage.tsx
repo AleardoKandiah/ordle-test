@@ -11,3 +11,5 @@ const CopyLink = () {
 }
 
 const [recentlyCopied, setRecentlyCopied] = useState(false);
+
+// check icon reset to copy icon after 1s
