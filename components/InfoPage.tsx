@@ -18,5 +18,6 @@ useEffect(() => {
         const timeout = setTimeout(() => {
             setRecentlyCopied(flase);
         }, 1000);
+        return () => clearTimeout(timeout);
     }
 })
