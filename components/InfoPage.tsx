@@ -9,3 +9,5 @@ const CopyLink = () {
         Buffer.from(solutionWord).toString("base64")
     )}`;
 }
+
+const [recentlyCopied, setRecentlyCopied] = useState(false)
