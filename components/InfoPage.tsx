@@ -20,5 +20,5 @@ const CopyLink = () {
             }, 1000);
             return () => clearTimeout(timeout);
         }
-    })
+    }, [recentlyCopied]);
 }
