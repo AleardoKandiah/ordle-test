@@ -13,3 +13,10 @@ const CopyLink = () {
 const [recentlyCopied, setRecentlyCopied] = useState(false);
 
 // check icon reset to copy icon after 1s
+useEffect(() => {
+    if(recentlyCopied) {
+        const timeout = setTimeout(() => {
+            setRecentlyCopied(flase);
+        }, 1000);
+    }
+})
