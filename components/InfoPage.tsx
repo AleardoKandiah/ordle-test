@@ -10,4 +10,4 @@ const CopyLink = () {
     )}`;
 }
 
-const [recentlyCopied, setRecentlyCopied] = useState(false)
+const [recentlyCopied, setRecentlyCopied] = useState(false);
