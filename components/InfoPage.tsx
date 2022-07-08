@@ -29,8 +29,11 @@ const CopyLink = () {
             onClick={() => {
                 navigator.clipboard.writeText(link);
                 setRecentlyCopied(true);
-            }}>
-
+            }}
+            className="hover:text-stone-700 p-1"
+            aria-label="Copy link"
+            >
+                {!recently}
             </button>
         </div>
     )
