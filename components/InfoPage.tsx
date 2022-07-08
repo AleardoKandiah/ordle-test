@@ -33,7 +33,7 @@ const CopyLink = () {
             className="hover:text-stone-700 p-1"
             aria-label="Copy link"
             >
-                {!recentlyCopied ? <CopySvg/> : <CheckSvg />}
+              {!recentlyCopied ? <CopySvg/> : <CheckSvg />}
             </button>
         </div>
     )
