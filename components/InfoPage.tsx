@@ -21,4 +21,10 @@ const CopyLink = () {
             return () => clearTimeout(timeout);
         }
     }, [recentlyCopied]);
+
+    return (
+        <div className="inline-flex items-center gap-2">
+            <div className="">{link}</div>
+        </div>
+    )
 }
