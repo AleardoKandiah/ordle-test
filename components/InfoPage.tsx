@@ -25,6 +25,13 @@ const CopyLink = () {
     return (
         <div className="inline-flex items-center gap-2">
             <div className="">{link}</div>
+            <button
+            onClick={() => {
+                navigator.clipboard.writeText(link);
+                setRecentlyCopied(true);
+            }}>
+
+            </button>
         </div>
     )
 }
