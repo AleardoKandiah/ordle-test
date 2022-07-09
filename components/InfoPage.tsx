@@ -48,7 +48,7 @@ export const InfoPage = ({ onClose }: { onClose: () => void }) => (
             >
                 <CloseSvg/>
             </button>    
-            <div className="">
+            <div className="flex flex-col gap-3 mt-8">
                 <h1>Instructions</h1>
                 <Instructions />
                 <h1 className="">Share secret word</h1>
