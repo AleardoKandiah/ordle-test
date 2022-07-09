@@ -38,3 +38,5 @@ const CopyLink = () {
         </div>
     )
 }
+
+export const InfoPage = ({ onClose }: { onClose: () => void } )
