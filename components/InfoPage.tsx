@@ -39,4 +39,6 @@ const CopyLink = () {
     )
 }
 
-export const InfoPage = ({ onClose }: { onClose: () => void } )
+export const InfoPage = ({ onClose }: { onClose: () => void }) => (
+    <div className="fixed w-screen h-screen bg-white top-0 left-0 z-10"
+)
