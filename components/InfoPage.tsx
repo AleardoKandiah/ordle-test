@@ -51,6 +51,7 @@ export const InfoPage = ({ onClose }: { onClose: () => void }) => (
             <div className="">
                 <h1>Instructions</h1>
                 <Instructions />
+                <h1 className="">Share secret word</h1>
             </div>
         </div>
     </div>
