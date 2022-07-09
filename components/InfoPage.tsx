@@ -48,6 +48,9 @@ export const InfoPage = ({ onClose }: { onClose: () => void }) => (
             >
                 <CloseSvg/>
             </button>    
+            <div className="">
+                
+            </div>
         </div>
     </div>
 )
